@@ -1,8 +1,13 @@
 function isSameType(value1, value2) {
-  let val1 = typeof value1;
-	let val2 = typeof value2;
-	if(val1==val2) return true;
-	else false;
+  if(typeof(value1)===typeof(value2)){
+		return true;
+	}
+	else if (value1===value2){
+		return true
+	}
+	else{
+		return false;
+	}
 }
 
 // do not change the code below.
